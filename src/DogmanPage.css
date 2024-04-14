@@ -7,16 +7,9 @@ body {
     overflow-x: hidden; /* Disable horizontal overflow */
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
 
-header h1 {
-    margin: 0;
-}
+
+
 
 #dogman-info {
     display: flex;

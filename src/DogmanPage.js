@@ -7,9 +7,7 @@ import './DogmanPage.css'; // Import the CSS file for styling
 function DogmanPage() {
   return (
     <div>
-      <header>
-        
-      </header>
+      
       <main id="dogman-info">
         <section id="dogman-books">
           <h2>Books in the Series</h2>
