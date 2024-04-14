@@ -1,52 +1,20 @@
 import React from 'react';
+import DogmanBook1 from './components/DogmanBooks/DogmanBook1';
+import DogmanBook2 from './components/DogmanBooks/DogmanBook2';
+import DogmanBook3 from './components/DogmanBooks/DogmanBook3';
+import DogmanBook4 from './components/DogmanBooks/DogmanBook4';
 
-// Dogman Book Component
-function DogmanBook({ title, image, summary }) {
-  return (
-    <div className="book">
-      <h2>{title}</h2>
-      <img src={image} alt={`${title} Cover`} />
-      <p>{summary}</p>
-    </div>
-  );
-}
-
-// Dogman Page Component
 function DogmanPage() {
-  // Define book data
-  const books = [
-    {
-      title: "Dogman: The Adventures of Dogman",
-      image: "dogman1.jpg",
-      summary: "In this first book, Dogman faces off against his nemesis, Petey the Cat, in a series of hilarious and action-packed adventures."
-    },
-    {
-      title: "Dogman Unleashed: The Wrath of Petey",
-      image: "dogman2.jpg",
-      summary: "Petey the Cat is back and causing trouble once again! Dogman must unleash his inner hero to stop Petey's evil plans."
-    },
-    {
-      title: "Dogman: A Tale of Two Kitties",
-      image: "dogman3.jpg",
-      summary: "When Dogman's city is threatened by a new villain, he teams up with a new ally, Cat Kid, to save the day in this exciting installment."
-    },
-    {
-      title: "Dogman and Cat Kid",
-      image: "dogman4.jpg",
-      summary: "In this heartwarming story, Dogman and his friend Cat Kid embark on a new adventure filled with friendship, courage, and humor."
-    },
-    // Add more books as needed
-  ];
-
   return (
     <div>
       <h1>Dogman Book Series</h1>
       <p>Dogman is a popular children's graphic novel series written and illustrated by Dav Pilkey. It follows the adventures of a part-dog, part-human hero named Dogman, who battles villains and saves the day.</p>
       <h2>Books in the Series</h2>
       <div className="books-container">
-        {books.map((book, index) => (
-          <DogmanBook key={index} title={book.title} image={book.image} summary={book.summary} />
-        ))}
+        <DogmanBook1 />
+        <DogmanBook2 />
+        <DogmanBook3 />
+        <DogmanBook4 />
       </div>
       <h2>About the Author</h2>
       <p>Dav Pilkey is a renowned author and illustrator known for creating popular children's book series such as Captain Underpants and Dogman. He is celebrated for his humorous writing style and engaging illustrations.</p>
@@ -63,3 +31,4 @@ function DogmanPage() {
 }
 
 export default DogmanPage;
+
