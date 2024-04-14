@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Disable horizontal overflow */
 }
 
 header {
@@ -20,6 +21,7 @@ header h1 {
 #dogman-info {
     display: flex;
     padding: 20px;
+    overflow: hidden; /* Hide any overflow content */
 }
 
 #dogman-books {
@@ -27,14 +29,14 @@ header h1 {
     border-right: 1px solid #ccc;
     padding-right: 20px;
     max-height: calc(100vh - 80px); /* Adjusted to fit header and padding */
-    overflow-y: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 #dogman-details {
     flex: 2;
     padding-left: 20px;
     max-height: calc(100vh - 80px); /* Adjusted to fit header and padding */
-    overflow-y: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 section {
@@ -44,4 +46,5 @@ section {
 section h2 {
     margin-top: 0;
 }
+
 

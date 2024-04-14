@@ -8,7 +8,7 @@ function DogmanPage() {
   return (
     <div>
       <header>
-        <h1>Dogman Book Series</h1>
+        
       </header>
       <main id="dogman-info">
         <section id="dogman-books">
