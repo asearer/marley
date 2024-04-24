@@ -2,6 +2,8 @@
 import React from 'react';
 import DogmanBook1 from './components/DogmanBooks/DogmanBook1'; // Corrected path
 import DogmanBook2 from './components/DogmanBooks/DogmanBook2'; // Corrected path
+import DogmanBook3 from './components/DogmanBooks/DogmanBook3'; // Corrected path
+import DogmanBook4 from './components/DogmanBooks/DogmanBook4'; // Corrected path
 import './DogmanPage.css'; // Import the CSS file for styling
 
 function DogmanPage() {
@@ -14,6 +16,8 @@ function DogmanPage() {
           <div className="dogman-book-container">
             <DogmanBook1 />
             <DogmanBook2 />
+            <DogmanBook3 />
+            <DogmanBook4 />
             {/* Add more book components here as needed */}
           </div>
         </section>
